@@ -23,6 +23,9 @@ def floating(square_side_to_transform):
     while not type(square_side_to_transform) is float:
         try:
             square_side_to_transform = float(square_side_to_transform)
+            if square_side_to_transform <= 0:
+                print('Please, enter the value which is greater than zero')
+                square_side_to_transform = input("Enter the length of the square side: ")
         except:
             print('Plese, type the number')
             square_side_to_transform = input("Enter the length of the square side: ")       
