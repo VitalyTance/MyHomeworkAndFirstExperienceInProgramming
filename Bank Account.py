@@ -23,7 +23,7 @@ def bank_account(deposit_amount, years):
 def to_float_amount(deposit_amount_to_mod):
     """
 In this field you need to enter the amount of a bank account.
-The amount should be enter in digital format and no more than 2-digit reminder in the end of
+The amount should be enter in digital format and no more than 2-digit remiander in the end of
 the number of the amount.
 For example: 2110.23
 """
@@ -31,7 +31,7 @@ For example: 2110.23
         try:
             deposit_amount_to_mod = float(deposit_amount_to_mod)
             if deposit_amount_to_mod != round(deposit_amount_to_mod, 2):
-                print('\nPlease. Enter the amount with 2-digit reminder')
+                print('\nPlease. Enter the amount with 2-digit remiander')
                 deposit_amount_to_mod = input('\nEnter the amount of the bank deposite: ')
             elif deposit_amount_to_mod < 0:
                 print('\nPlease. Enter the amount which is greater than or equal to zero: ')
